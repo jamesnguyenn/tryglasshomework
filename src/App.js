@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BaiTapThuKinh from "./components/BaiTapThuKinh";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex flex-col justify-start items-center z-50 text-white gap-4 ">
+        <h1 className="text-3xl font-bold p-10 bg-[#00000052] w-full text-center ">
+          TRY GLASSES APP ONLINE
+        </h1>
+        <BaiTapThuKinh />
+      </div>
     </div>
   );
 }
